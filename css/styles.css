@@ -1,0 +1,549 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ABOUT ME + NAVBAR AND FOOTER */
+
+body {
+    background-color: #0F172A;
+    font-family: 'Inter', sans-serif;
+    color: #F8FAFC;
+}
+
+p {
+    color: #CBD5E1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8%;
+    background-color: #1E293B;
+    opacity: 60%;
+    border-radius: 1rem;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+}
+
+.name {
+    color: #38BDF8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.menu {
+    display: flex;
+    gap: 25%;
+}
+
+.menu a {
+    color: #F8FAFC;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid white;
+    border-left: none;
+    max-width: 100%;
+    padding: 10%;
+    margin: 2% 10% 2% 0;
+}
+
+.profile_image {
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.hero_intro {
+    flex: 1;
+}
+
+.hero_intro h1 {
+    font-size: 2.5em;
+    margin: 2% 0;
+    color: #38BDF8;
+}
+
+.about_description {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    max-width: 100%;
+    margin: 2% 0 2% 10%;
+    padding: 10%;
+    border: 1px solid white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: none;
+}
+
+.description_text {
+    flex: 1;
+}
+
+.about_description img {
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.interests {
+    max-width: 100%;
+    margin: 4% 0;
+    padding: 2%;
+    text-align: center;
+}
+
+.interests_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.interests_card {
+    border: 1px solid #334155;
+    border-radius: 1rem;
+    padding: 10%;
+    text-align: center;
+    background-color: #1e293b;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.interests_card h3 {
+    color: #38BDF8;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #334155;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 8%;
+    border-top: 1px solid white;
+    border-radius: 1rem;
+    background-color: #1E293B;
+}
+
+.social_links {
+    display: flex;
+    gap: 15%;
+    align-items: center;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: #38BDF8;
+}
+
+.social_links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+
+/* CV section  */
+
+
+.cv_page {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 5%;
+    max-width: 100%;
+    margin: 3rem 2rem;
+    padding: 0 2rem;
+}
+
+.cv_sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.profile_section {
+    text-align: center;
+}
+
+.cv_profile_image {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact_section {
+    border-top: 1px solid #334155;
+    padding-top: 1rem;
+}
+
+.contact_section p {
+    margin: 0.7rem 0;
+}
+
+
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.skills_list span {
+    background-color: #334155;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.7rem;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.language_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.language_bar {
+    width: 100%;
+    height: 0.6rem;
+    background-color: #334155;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.romanian_bar {
+    width: 100%;
+    height: 100%;
+    background-color: #38BDF8;
+}
+
+.english_bar {
+    width: 85%;
+    height: 100%;
+    background-color: #38BDF8;
+}
+
+.cv_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cv_header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.cv_header p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.cv_card {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.cv_card h2 {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #334155;
+}
+
+
+.cv_entry {
+    padding: 0.5rem 1rem;
+    border-left: 2px solid #334155;
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+
+.date {
+    color: #38BDF8;
+    font-weight: 600;
+}
+
+
+/* Projects Section */
+
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    max-width: 100%;
+    margin: 3rem 2rem;
+    padding: 2rem 2rem;
+}
+
+
+.projects_header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.projects_header p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.project_card {
+    border: 1px solid #334155;
+    border-radius: 1rem;
+    padding: 10%;
+    text-align: center;
+    background-color: #1E293B;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #38BDF8;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #38BDF8;
+    border-radius: 0.5rem;
+}
+
+.project_card a:hover {
+    background-color: #38BDF8;
+    color: #0F172A;
+}
+
+.techs_used {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.techs_used span {
+    background-color: #334155;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.7rem;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .navbar {
+        padding: 1.5rem 5%;
+    }
+
+    .menu {
+        gap: 1.5rem;
+    }
+
+    .hero {
+        gap: 3%;
+        padding: 6%;
+        margin: 2% 5% 2% 0;
+    }
+
+    .profile_image {
+        width: 40%;
+    }
+
+    .hero_intro h1 {
+        font-size: 2rem;
+    }
+
+    .about_description {
+        gap: 3%;
+        padding: 6%;
+        margin: 2% 0 2% 5%;
+    }
+
+    .about_description img {
+        width: 40%;
+    }
+
+    .interests_grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .cv_page {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        margin: 2rem 1.5rem;
+        padding: 0;
+    }
+
+    .cv_profile_image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+        margin: 2rem 1.5rem;
+        padding: 1rem;
+    }
+
+    .footer {
+        padding: 2rem 5%;
+    }
+
+    .social_links {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .profile_image {
+        width: 80%;
+    }
+
+    .hero_intro {
+        text-align: center;
+    }
+
+    .hero_intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .about_description {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .description_text {
+        text-align: center;
+    }
+
+    .about_description img {
+        width: 80%;
+    }
+
+    .interests {
+        padding: 1rem;
+    }
+
+    .interests_grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .interests_card {
+        padding: 2rem 1rem;
+    }
+
+    .cv_page {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .cv_sidebar {
+        padding: 1.5rem;
+    }
+
+    .cv_profile_image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cv_card {
+        padding: 1.5rem 1rem;
+    }
+
+    .cv_header h1 {
+        font-size: 2rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .project_card {
+        padding: 1.5rem;
+    }
+
+    .projects_header h1 {
+        font-size: 2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .social_links {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+    }
+}
